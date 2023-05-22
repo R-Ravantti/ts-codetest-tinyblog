@@ -1,14 +1,28 @@
-import React from 'react';
-import { mockSomePosts } from './Mockingcalls';
+import React, {useState, useEffect} from 'react';
 import PostSection from './PostSection';
+import { PostData } from './Apicalls';
+// uncomment when ready to build
+//import { fetchAllPosts } from './Apicalls';
+// comment when ready to build
+import { mockSomePosts } from './Mockingcalls';
 
 function App() {
   const tagList: string[] = ["mystery", "english"];
-  const mockPosts = mockSomePosts();
+  const [posts, setPosts] = useState<PostData[]>([]);
+
+  // uncomment when ready to build
+  /*useEffect(() => {
+    setPosts(fetchAllPosts);
+  }, [])*/
+  // comment when ready to build
+  useEffect(() => {
+    setPosts(mockSomePosts);
+  }, [])
+
   return (
     <div className="App">
       {tagList.map(tag => {
-        return <PostSection posts={mockPosts.filter(post => post.tags.includes(tag))} tag={tag} />
+        return <PostSection posts={posts.filter(post => post.tags.includes(tag))} tag={tag} />
       })}
     </div>
   );

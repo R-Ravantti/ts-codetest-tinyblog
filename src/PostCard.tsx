@@ -1,3 +1,4 @@
+import './css/PostCard.css';
 import { PostData } from "./Apicalls";
 
 type PostCardProps = {
@@ -5,9 +6,10 @@ type PostCardProps = {
 }
 
 function PostCard(props: PostCardProps) {
+    const post = props.post;
     return (
         <div className="PostCard">
-            <p>{props.post.title}</p>
+            <p>{post.title}</p>
         </div>
     )
 }

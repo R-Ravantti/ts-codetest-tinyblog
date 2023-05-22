@@ -12,3 +12,8 @@
     cursor: pointer;
     font-weight: bold;
 }
+
+.Collapsible__contentInner {
+    display: flex;
+    flex-wrap: wrap;
+}
