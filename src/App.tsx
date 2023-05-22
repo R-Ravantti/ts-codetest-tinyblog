@@ -3,7 +3,7 @@ import { mockSomePosts } from './Mockingcalls';
 import PostSection from './PostSection';
 
 function App() {
-  const tagList: string[] = ["english"];
+  const tagList: string[] = ["mystery"];
   const mockPosts = mockSomePosts();
   return (
     <div className="App">

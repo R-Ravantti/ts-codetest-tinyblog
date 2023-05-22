@@ -1,4 +1,5 @@
 import { PostData } from "./Apicalls";
+import PostCard from "./PostCard";
 
 type PostSectionProps = {
     posts: PostData[]
@@ -8,7 +9,7 @@ function PostSection(props: PostSectionProps) {
     return (
         <div className="PostSection">
             {props.posts.map(post => {
-                return <p>{post.title}</p>
+                return <PostCard post={post}/>
             })}
         </div>
     )
