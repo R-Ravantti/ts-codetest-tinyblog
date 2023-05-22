@@ -3,12 +3,12 @@ import { mockSomePosts } from './Mockingcalls';
 import PostSection from './PostSection';
 
 function App() {
-  const tagList: string[] = ["mystery"];
+  const tagList: string[] = ["mystery", "english"];
   const mockPosts = mockSomePosts();
   return (
     <div className="App">
       {tagList.map(tag => {
-        return <PostSection posts={mockPosts.filter(post => post.tags.includes(tag))} />
+        return <PostSection posts={mockPosts.filter(post => post.tags.includes(tag))} tag={tag} />
       })}
     </div>
   );
