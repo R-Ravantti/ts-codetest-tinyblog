@@ -14,8 +14,8 @@ type PostJson = {
     limit: number
 }
 
-export async function fetchAllPosts() {
-    const res = await fetch('https://dummyjson.com/posts?limit=0');
+export async function fetchAllPosts(setPosts: React.Dispatch<React.SetStateAction<PostData[]>>) {
+    const res = await fetch('https://dummyjson.com/posts');
     const resbody: PostJson = await res.json();
-    return resbody.posts;
+    setPosts(resbody.posts);
 }

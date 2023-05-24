@@ -1,6 +1,6 @@
 import { PostData } from "./Apicalls";
 
-export function mockSomePosts() {
+export function mockSomePosts(setPosts: React.Dispatch<React.SetStateAction<PostData[]>>) {
     const mockData: PostData[] = [
         {
           id: 1,
@@ -121,5 +121,5 @@ export function mockSomePosts() {
           reactions: 4
         }
       ];
-      return mockData;
+      setPosts(mockData);
 }

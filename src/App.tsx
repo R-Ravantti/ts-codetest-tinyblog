@@ -12,11 +12,11 @@ function App() {
 
   // uncomment when ready to build
   /*useEffect(() => {
-    setPosts(fetchAllPosts);
+    fetchAllPosts(setPosts);
   }, [])*/
   // comment when ready to build
   useEffect(() => {
-    setPosts(mockSomePosts);
+    mockSomePosts(setPosts);
   }, [])
 
   return (

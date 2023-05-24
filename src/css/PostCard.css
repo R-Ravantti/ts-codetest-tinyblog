@@ -4,3 +4,24 @@
     border: 1px solid orange;
     border-radius: 5px;
 }
+
+.PostCard-Title {
+    height: 30px;
+    margin-left: 10px;
+}
+
+.PostCard-Body {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.PostCard-Tags {
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Tag-Paragraph, .Body-Paragraph {
+    margin-top: 1px;
+    margin-right: 5px;
+}
