@@ -3,6 +3,7 @@
     width: 95%;
     min-height: 40px;
     margin: 10px;
+    background-color: paleturquoise;
     border: 2px solid black;
     border-radius: 5px;
 }

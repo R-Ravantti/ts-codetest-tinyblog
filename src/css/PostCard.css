@@ -1,7 +1,8 @@
 .PostCard {
     width: 30%;
     margin: 10px;
-    border: 1px solid orange;
+    background-color: lightgreen;
+    border: 1px solid lightgreen;
     border-radius: 5px;
 }
 
@@ -19,6 +20,11 @@
     margin-left: 10px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.Title-Paragraph {
+    font-weight: bold;
+    margin-top: 8px;
 }
 
 .Tag-Paragraph, .Body-Paragraph {

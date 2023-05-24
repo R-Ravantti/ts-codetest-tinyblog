@@ -7,7 +7,7 @@ import { PostData } from './Apicalls';
 import { mockSomePosts } from './Mockingcalls';
 
 function App() {
-  const tagList: string[] = ["mystery", "english"];
+  const tagList: string[] = ["mystery", "fiction", "classic", "french", "english"];
   const [posts, setPosts] = useState<PostData[]>([]);
 
   // uncomment when ready to build

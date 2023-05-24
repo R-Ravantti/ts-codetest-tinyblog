@@ -19,7 +19,7 @@ function PostCard(props: PostCardProps) {
             <hr />
             <div className="PostCard-Tags">
                 {post.tags.map(tag => {
-                    return <p className="Tag-Paragraph">{tag}</p>
+                    return <p className="Tag-Paragraph">{`[${tag}]`}</p>
                 })}
             </div>
         </div>
