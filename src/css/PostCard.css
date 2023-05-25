@@ -1,13 +1,25 @@
 .PostCard {
-    width: 30%;
+    width: 100%;
     margin: 10px;
     background-color: lightgreen;
     border: 1px solid lightgreen;
     border-radius: 5px;
 }
 
+@media (min-width: 768px) {
+    .PostCard {
+        width: 46%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .PostCard {
+        width: 30%;
+    }
+}
+
 .PostCard-Title {
-    height: 30px;
+    min-height: 30px;
     margin-left: 10px;
 }
 
